@@ -1,0 +1,82 @@
+{
+    "data": {
+        "coffee-based-hot": {
+            "name": "نوشیدنی های گرم بر پایه قهوه",
+            "enName": "Coffee-Based Hot Drinks",
+            "items": [
+                {
+                    "name": "دبل اسپرسو",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "100 روبوستا",
+                            "price": 28
+                        },
+                        "70R": {
+                            "name": "70/30 روبوستا",
+                            "price": 30
+                        },
+                        "50": {
+                            "name": "70/30 روبوستا",
+                            "price": 30
+                        },
+                        "70AR": {
+                            "name": "70/30 عربیکا",
+                            "price": 35
+                        },
+                        "100AR": {
+                            "name": "100 عربیکا",
+                            "price": 38
+                        }
+                    }
+                },
+                {
+                    "name": "امریکانو",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "100 روبوستا",
+                            "price": 28
+                        },
+                        "70R": {
+                            "name": "70/30 روبوستا",
+                            "price": 30
+                        },
+                        "50": {
+                            "name": "70/30 روبوستا",
+                            "price": 30
+                        },
+                        "70AR": {
+                            "name": "70/30 عربیکا",
+                            "price": 35
+                        },
+                        "100AR": {
+                            "name": "100 عربیکا",
+                            "price": 38
+                        }
+                    }
+                }
+            ]
+        },
+        "coffee-based-cold": {
+            "name": "نوشیدنی های سرد بر پایه قهوه",
+            "enName": "Coffee-Based Cold Drinks",
+            "items": []
+        },
+        "specials-cold": {
+            "name": "نوشیدنی های مخصوص سرد",
+            "enName": "Specials Cold Drinks",
+            "items": []
+        },
+        "specials-hot": {
+            "name": "نوشیدنی های مخصوص گرم",
+            "enName": "Specials Hot Drinks",
+            "items": []
+        },
+        "tea": {
+            "name": "چای و دمنوش",
+            "enName": "Tea And Herbal tea",
+            "items": []
+        }
+    }
+}
