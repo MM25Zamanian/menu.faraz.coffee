@@ -1,7 +1,7 @@
 {
     "data": {
         "coffee-based-hot": {
-            "name": "نوشیدنی های گرم بر پایه قهوه",
+            "name": "قهوه های گرم",
             "enName": "Coffee-Based Hot Drinks",
             "items": [
                 {
@@ -9,69 +9,204 @@
                     "image": "",
                     "variants": {
                         "100R": {
-                            "name": "100 روبوستا",
+                            "name": "۱۰۰٪ روبوستا",
                             "price": 28
                         },
                         "70R": {
-                            "name": "70/30 روبوستا",
+                            "name": "۷۰٪ روبوستا",
                             "price": 30
                         },
                         "50": {
-                            "name": "70/30 روبوستا",
-                            "price": 30
+                            "name": "۵۰٪",
+                            "price": 30,
+                            "default": true
                         },
                         "70AR": {
-                            "name": "70/30 عربیکا",
+                            "name": "۷۰٪ عربیکا",
                             "price": 35
                         },
                         "100AR": {
-                            "name": "100 عربیکا",
+                            "name": "۱۰۰٪ عربیکا",
                             "price": 38
                         }
                     }
                 },
                 {
-                    "name": "امریکانو",
+                    "name": "آمریکانو",
                     "image": "",
                     "variants": {
                         "100R": {
-                            "name": "100 روبوستا",
-                            "price": 28
+                            "name": "۱۰۰٪ روبوستا",
+                            "price": 33
                         },
                         "70R": {
-                            "name": "70/30 روبوستا",
-                            "price": 30
-                        },
-                        "50": {
-                            "name": "70/30 روبوستا",
-                            "price": 30
-                        },
-                        "70AR": {
-                            "name": "70/30 عربیکا",
+                            "name": "۷۰٪ روبوستا",
                             "price": 35
                         },
+                        "50": {
+                            "name": "۵۰٪",
+                            "price": 35,
+                            "default": true
+                        },
+                        "70AR": {
+                            "name": "۷۰٪ عربیکا",
+                            "price": 40
+                        },
                         "100AR": {
-                            "name": "100 عربیکا",
-                            "price": 38
+                            "name": "۱۰۰٪ عربیکا",
+                            "price": 43
+                        }
+                    }
+                },
+                {
+                    "name": "لاته وانیل",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "۱۰۰٪ روبوستا",
+                            "price": 33
+                        },
+                        "70R": {
+                            "name": "۷۰٪ روبوستا",
+                            "price": 35
+                        },
+                        "50": {
+                            "name": "۵۰٪",
+                            "price": 35,
+                            "default": true
+                        },
+                        "70AR": {
+                            "name": "۷۰٪ عربیکا",
+                            "price": 40
+                        },
+                        "100AR": {
+                            "name": "۱۰۰٪ عربیکا",
+                            "price": 43
                         }
                     }
                 }
             ]
         },
         "coffee-based-cold": {
-            "name": "نوشیدنی های سرد بر پایه قهوه",
+            "name": "قهوه های سرد",
             "enName": "Coffee-Based Cold Drinks",
-            "items": []
+            "items": [
+                {
+                    "name": "آیس اسپرسو",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "۱۰۰٪ روبوستا",
+                            "price": 28
+                        },
+                        "70R": {
+                            "name": "۷۰٪ روبوستا",
+                            "price": 30
+                        },
+                        "50": {
+                            "name": "۵۰٪",
+                            "price": 30,
+                            "default": true
+                        },
+                        "70AR": {
+                            "name": "۷۰٪ عربیکا",
+                            "price": 35
+                        },
+                        "100AR": {
+                            "name": "۱۰۰٪ عربیکا",
+                            "price": 38
+                        }
+                    }
+                },
+                {
+                    "name": "آیس آمریکانو",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "۱۰۰٪ روبوستا",
+                            "price": 33
+                        },
+                        "70R": {
+                            "name": "۷۰٪ روبوستا",
+                            "price": 35
+                        },
+                        "50": {
+                            "name": "۵۰٪",
+                            "price": 35,
+                            "default": true
+                        },
+                        "70AR": {
+                            "name": "۷۰٪ عربیکا",
+                            "price": 40
+                        },
+                        "100AR": {
+                            "name": "۱۰۰٪ عربیکا",
+                            "price": 43
+                        }
+                    }
+                },
+                {
+                    "name": "آیس لاته وانیل",
+                    "image": "",
+                    "variants": {
+                        "100R": {
+                            "name": "۱۰۰٪ روبوستا",
+                            "price": 33
+                        },
+                        "70R": {
+                            "name": "۷۰٪ روبوستا",
+                            "price": 35
+                        },
+                        "50": {
+                            "name": "۵۰٪",
+                            "price": 35,
+                            "default": true
+                        },
+                        "70AR": {
+                            "name": "۷۰٪ عربیکا",
+                            "price": 40
+                        },
+                        "100AR": {
+                            "name": "۱۰۰٪ عربیکا",
+                            "price": 43
+                        }
+                    }
+                }
+            ]
         },
         "specials-cold": {
-            "name": "نوشیدنی های مخصوص سرد",
+            "name": "نوشیدنی های سرد ویژه",
             "enName": "Specials Cold Drinks",
-            "items": []
+            "items": [
+                {
+                    "name": "آیس کاپوچ",
+                    "image": "",
+                    "variants": {
+                        "NORM": {
+                            "name": "مخصوص",
+                            "price": 1000,
+                            "default": true
+                        }
+                    }
+                }
+            ]
         },
         "specials-hot": {
-            "name": "نوشیدنی های مخصوص گرم",
+            "name": "نوشیدنی های گرم ویژه",
             "enName": "Specials Hot Drinks",
-            "items": []
+            "items": [
+                {
+                    "name": "کاپوچ",
+                    "image": "",
+                    "variants": {
+                        "NORM": {
+                            "name": "مخصوص",
+                            "price": 999,
+                            "default": true
+                        }
+                    }
+                }
+            ]
         },
         "tea": {
             "name": "چای و دمنوش",
