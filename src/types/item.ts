@@ -7,6 +7,7 @@ interface IItem {
 interface Variant {
   name: string;
   price: number;
+  default?: true;
 }
 
 export default IItem;
