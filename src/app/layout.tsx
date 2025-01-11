@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa-IR" dir="rtl" className="h-screen-safe w-screen bg-base-100">
+    <html lang="fa" dir="rtl" className="h-screen-safe w-screen bg-base-100">
       <body
         className={`${vazirmatn.className} antialiased size-full flex flex-col overflow-hidden bg-transparent`}
       >
@@ -36,7 +36,7 @@ export default function RootLayout({
               فراز کافه
             </button>
             <div className="navbar-end">
-              <button className="btn btn-ghost btn-square text-2xl text-base-content">
+              <button className="btn btn-ghost btn-square text-2xl text-base-content" title="مکان ما">
                 <Icon icon="solar:map-point-bold-duotone" />
               </button>
             </div>
@@ -54,8 +54,8 @@ export default function RootLayout({
               <Image
                 src={GecutLogo}
                 alt="Gecut Logo"
-                width="16"
-                height="16"
+                width="12"
+                height="12"
                 quality="100"
                 priority
               />
