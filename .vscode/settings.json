@@ -1,11 +1,15 @@
 {
     "cSpell.language": "en,fa-IR",
     "cSpell.words": [
+        "buildx",
         "daisyui",
         "Faraz",
         "Gecut",
+        "iconify",
+        "toman",
         "Vazirmatn",
         "webp",
         "دمنوش"
-    ]
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
