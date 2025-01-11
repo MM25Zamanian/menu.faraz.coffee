@@ -1,0 +1,47 @@
+# Primarily ignore development-related files and directories
+
+# Node modules (dependencies are installed inside the container)
+node_modules
+
+# Temporary files and directories
+.next/cache
+.nuxt
+dist
+build
+
+# Git related files
+.git
+.gitignore
+
+# Editor and IDE specific files
+.vscode
+.idea
+*.swp
+*.swo
+*.log
+out
+
+# Environment files (handle secrets separately, don't bake them into the image)
+.env
+.env.local
+.env.development
+.env.production
+
+# MacOS system files
+.DS_Store
+
+# Package manager lock files (already handled by `npm install --frozen-lockfile`)
+# You might keep these if your workflow relies on them being present during the copy phase
+# but generally, the installation step handles this.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Documentation or other non-essential files (adjust as needed)
+README.md
+LICENSE
+
+# Any other files or directories you don't need in the Docker image
+# Example: Local database files, large media assets not part of the build
+# data/
+# assets-local/
