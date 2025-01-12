@@ -10,6 +10,7 @@ export const projectConfig = {
 const nextConfig: NextConfig = {
   output: "export",
   distDir: "dist",
+  images: { unoptimized: true },
 
   trailingSlash: true,
   transpilePackages: ["#/*", "@/*", "~/*"],
