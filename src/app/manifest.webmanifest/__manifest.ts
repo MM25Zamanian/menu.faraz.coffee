@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
+import { projectConfig } from "#/next.config";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Next.js App",
-    short_name: "Next.js App",
-    description: "Next.js App",
+    name: projectConfig.name,
+    short_name: projectConfig.name,
+    description: projectConfig.description,
     start_url: "/",
     display: "standalone",
     background_color: "#20161f",
