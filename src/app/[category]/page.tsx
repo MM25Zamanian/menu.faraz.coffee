@@ -1,9 +1,8 @@
 import ItemCard from "@/components/item-card";
 import IDataBase from "@/types/db";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import _database from "~/db/index.json";
-
-export const revalidate = 60;
 
 export async function generateStaticParams() {
   return Object.keys((_database as IDataBase).data).map((category) => ({
@@ -18,7 +17,9 @@ export default async function Page({
 }) {
   const database = _database as IDataBase;
   const category: keyof IDataBase["data"] = (await params).category;
-  const items = database.data[category].items;
+  const items = database.data[category]?.items;
+
+  if (!database.data[category]) return notFound();
 
   return (
     <div className="flex flex-col overflow-y-auto">
