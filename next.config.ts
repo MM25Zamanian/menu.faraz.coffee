@@ -2,14 +2,17 @@ import type { NextConfig } from "next";
 
 export const projectConfig = {
   url: new URL("https://menu.faraz.gecut.ir"),
-  name: "منوی فراز کافه",
+  name: "منوی کافه فراز",
   description:
-    "کافه فراز، تجربه‌ای متفاوت از طعم قهوه. ما با تمرکز بر ارائه بهترین برندهای قهوه، منویی متنوع از نوشیدنی‌های گرم و سرد بر پایه قهوه را برای شما فراهم کرده‌ایم. در کافه فراز خبری از دسر و میان‌وعده نیست، اینجا فقط برای عاشقان قهوه است.",
+    "تجربه‌ای متفاوت از طعم قهوه. ما با تمرکز بر ارائه بهترین برندهای قهوه، منویی متنوع از نوشیدنی‌های گرم و سرد بر پایه قهوه را برای شما فراهم کرده‌ایم. در کافه فراز خبری از دسر و میان‌وعده نیست، اینجا فقط برای عاشقان قهوه است.",
 } as const;
 
 const nextConfig: NextConfig = {
+  output: "export",
+  distDir: "dist",
+
   trailingSlash: true,
-  transpilePackages: ["@/*", "~/*"],
+  transpilePackages: ["#/*", "@/*", "~/*"],
   reactStrictMode: true,
 
   experimental: {
@@ -17,7 +20,7 @@ const nextConfig: NextConfig = {
       rules: {
         "*.svg": {
           loaders: ["@svgr/webpack"],
-          as: "*.jsx",
+          as: "*.js",
         },
       },
     },
@@ -30,10 +33,6 @@ const nextConfig: NextConfig = {
     });
 
     return config;
-  },
-
-  async redirects() {
-    return [{ source: "/", destination: "/menu", permanent: true }];
   },
 };
 
