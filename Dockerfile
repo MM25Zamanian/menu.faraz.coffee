@@ -24,22 +24,29 @@ RUN npm run build
 
 
 # --- Stage 3: Runner (Run the Next.js app in production) ---
-FROM docker.io/library/node:20 AS runner
+# FROM docker.io/library/node:20 AS runner
 
-# Set the working directory
-WORKDIR /app
+# # Set the working directory
+# WORKDIR /app
 
-# Set environment variables for production (optional, configure as needed)
-ENV NODE_ENV production
+# # Set environment variables for production (optional, configure as needed)
+# ENV NODE_ENV production
 
-# Copy only the necessary files from the builder stage
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package*.json ./
+# # Copy only the necessary files from the builder stage
+# COPY --from=builder /app/public ./public
+# COPY --from=builder /app/.next ./.next
+# COPY --from=builder /app/node_modules ./node_modules
+# COPY --from=builder /app/package*.json ./
 
-# Expose the port Next.js runs on (default is 3000)
-EXPOSE 3000
+# # Expose the port Next.js runs on (default is 3000)
+# EXPOSE 3000
 
-# Start the Next.js application in production mode
-CMD ["npm", "start"]
+# # Start the Next.js application in production mode
+# CMD ["npm", "start"]
+
+FROM ghcr.io/alwatr/nginx-core:3.3.5 AS runner
+
+COPY --from=builder /app/dist .
+
+EXPOSE 80
+
