@@ -44,7 +44,7 @@ RUN npm run build
 # # Start the Next.js application in production mode
 # CMD ["npm", "start"]
 
-FROM ghcr.io/alwatr/nginx-core:3.3.5 AS runner
+FROM ghcr.io/alwatr/nginx-ws:3.3.5 AS runner
 
 COPY --from=builder /app/dist .
 
