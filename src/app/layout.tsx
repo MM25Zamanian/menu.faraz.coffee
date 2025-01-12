@@ -4,7 +4,6 @@ import "./globals.css";
 import __metadata from "./__metadata";
 import GecutLogo from "~/gecut.webp";
 import ProjectLogo from "~/logo.webp";
-import { Icon } from "@iconify/react";
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
@@ -35,11 +34,7 @@ export default function RootLayout({
               />
               فراز کافه
             </button>
-            <div className="navbar-end">
-              <button className="btn btn-ghost btn-square text-2xl text-base-content" title="مکان ما">
-                <Icon icon="solar:map-point-bold-duotone" />
-              </button>
-            </div>
+            <div className="navbar-end"></div>
           </div>
         </div>
 
