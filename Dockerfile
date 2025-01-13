@@ -46,6 +46,8 @@ RUN npm run build
 
 FROM ghcr.io/alwatr/nginx-ws:3.3.5 AS runner
 
+COPY nginx/etc/nginx/ /etc/nginx/
+
 COPY --from=builder /app/dist .
 
 EXPOSE 80
